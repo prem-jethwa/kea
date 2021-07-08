@@ -1,0 +1,49 @@
+@import "../../styles/global";
+
+.main {
+  @include applyCon;
+  margin: 1em auto;
+}
+
+@import "./rest";
+
+.foods-con {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  //   grid-auto-rows: 250px;
+  .food {
+    padding: 0.5em;
+
+    img {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 300px;
+      border-radius: 5px;
+    }
+
+    .title {
+      margin: 0.5em 0 0 0;
+    }
+
+    .price-add {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.5em 0 0 0;
+
+      div {
+        padding: 0.5em;
+        background-color: rgb(255, 234, 118);
+        margin: auto 0 0 auto;
+        border-radius: 10px;
+        align-self: flex-end;
+        justify-self: end;
+        cursor: pointer;
+        &:hover {
+          background-color: aliceblue;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.pop-up {
+  display: flex;
+  width: 100%;
+  /* max-width: 1000px; */
+  margin: 0 auto;
+  /* position: absolute; */
+  padding: 1em 0;
+  background-color: rgba(250, 235, 215, 0.699);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.mdiv {
+  width: 30px;
+  height: 30px;
+  margin: 0 0.7em 0 1em;
+  background-color: rgba(105, 105, 105, 0.397);
+  padding: 0.5em 0.5em 0.5em 0.7em;
+  border-radius: 50%;
+}
+
+.mdiv2 {
+  height: 30px;
+  width: 2px;
+  margin-left: 12px;
+  background-color: black;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.md {
+  height: 30px;
+  width: 2px;
+  background-color: black;
+  transform: rotate(90deg);
+  z-index: 2;
+}
+.mdiv:hover {
+  background-color: rgba(255, 167, 53, 0.699);
+}
+
+@media (max-width: 600px) {
+  .pop-up {
+    font-size: 0.8rem;
+  }
+}

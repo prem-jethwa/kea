@@ -1,0 +1,43 @@
+@import "../../../../styles/global";
+.rest-container {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  .rest {
+    @include rmDefault;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+
+    padding: 0;
+    border-radius: 10px;
+    height: 100%;
+    h3 {
+      grid-column: 2 /3;
+      grid-row: 1/ 2;
+      text-align: right;
+      margin: 1em;
+    }
+    p {
+      grid-row: 2/ 3;
+      grid-column: 2 /3;
+      text-align: right;
+      align-self: flex-end;
+      justify-self: right;
+      margin: 0.5em;
+    }
+    img {
+      // width: 50%;
+      max-width: 250px;
+      height: 100%;
+      grid-column: 1 /2;
+      grid-row: 1/ 3;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+  }
+}
+
+@import "./media-query";

@@ -1,0 +1,37 @@
+.rest {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  justify-content: center;
+  margin: 1em;
+  background-color: rgba(240, 248, 255, 0.349);
+  border-radius: 10px;
+
+  img {
+    width: 100%;
+    max-width: 400px;
+    margin: 1em;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .name-loc {
+    justify-self: center;
+    margin: 1em;
+
+    .loc {
+      border-bottom: 2px dotted rgba(17, 17, 17, 0.733);
+    }
+    .stars {
+      margin: 2em 0.5em;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .rest {
+    grid-template-columns: 1fr;
+    img {
+      width: 90%;
+    }
+  }
+}

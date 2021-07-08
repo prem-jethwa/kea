@@ -1,0 +1,58 @@
+@import "../../styles/global";
+
+@media (max-width: 700px) {
+  .header-con {
+    padding: 0.5em 1em;
+    grid-template-columns: 0.5fr 100px 0.5fr;
+    grid-template-rows: 90px 1fr;
+    .acc {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+    }
+    .logo {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+      padding: 0;
+      margin: 0;
+    }
+    .cart {
+      grid-row: 1 / 2;
+      grid-column: 3 / 4;
+      // justify-self: unset;
+      margin: 0.5em 0 0.5em auto;
+    }
+
+    .loc-search {
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+      // width: 100%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .header-con {
+    font-size: 1rem;
+    grid-template-rows: 60px 1fr;
+
+    .acc {
+      width: 40px;
+    }
+    .logo {
+      font-size: 2rem;
+    }
+    .cart {
+      font-size: 1rem;
+    }
+
+    .loc-search {
+      img {
+        width: 25px;
+      }
+      .loc {
+        // font-size: 1.2rem;
+        padding: 0.5em;
+      }
+    }
+  }
+}

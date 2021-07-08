@@ -1,0 +1,56 @@
+* {
+  color: #423c4d;
+}
+
+.rest-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.rest-container .rest {
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 0 10px rgba(119, 119, 119, 0.897);
+          box-shadow: 0 0 10px rgba(119, 119, 119, 0.897);
+  text-decoration: none;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  background-color: rgba(209, 209, 209, 0.281);
+  max-width: 300px;
+}
+
+.rest-container .rest img {
+  width: 100%;
+  height: 150px;
+}
+
+@media (max-width: 700px) {
+  .rest-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .rest-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=pre-sec.module.css.map */

@@ -1,0 +1,87 @@
+* {
+  color: #423c4d;
+}
+
+.cart-con {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgba(240, 248, 255, 0.267);
+}
+
+.cart-con h2 {
+  padding: 1em;
+}
+
+.cart-con h2 span {
+  background-color: aliceblue;
+  border-radius: 50%;
+  padding: 0.2em 0.5em;
+  line-height: 1em;
+  text-align: right;
+  margin: 0.5em;
+}
+
+.cart-con .order {
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  background: transparent;
+  padding: 0.5em;
+  background-color: aliceblue;
+  margin: 1em 0.5em 1em 1em;
+  float: right;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.cart-con .order:hover {
+  background-color: #fff;
+}
+
+.cart-con .total {
+  padding: 1.5em;
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+.cart-con .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: aliceblue;
+  border-radius: 10px;
+  margin: 0.5em 1em;
+  background-color: rgba(219, 219, 219, 0.432);
+  padding: 0.5em;
+}
+
+.cart-con .cart img {
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.cart-con .cart .btns {
+  text-align: center;
+}
+
+.cart-con .cart .btns .qtn {
+  padding: 0.5em 0;
+}
+
+.cart-con .cart .btns .more,
+.cart-con .cart .btns .less {
+  cursor: pointer;
+  padding: 0.5em;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+
+.cart-con .cart .btns .more:hover,
+.cart-con .cart .btns .less:hover {
+  background-color: #dcefff;
+}
+/*# sourceMappingURL=cart.module.css.map */

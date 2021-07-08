@@ -1,0 +1,25 @@
+.notify {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+.notify p {
+  min-width: 270px;
+  position: fixed;
+  padding: 1em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 20%;
+  left: 20%;
+  z-index: 10;
+}
+
+.notify p h3 {
+  background-color: antiquewhite;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+}

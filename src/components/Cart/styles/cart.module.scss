@@ -1,0 +1,77 @@
+@import "../../styles/global";
+
+.cart-con {
+  @include applyCon;
+  background-color: rgba(240, 248, 255, 0.267);
+
+  h2 {
+    padding: 1em;
+  }
+  h2 span {
+    background-color: rgb(240, 248, 255);
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    line-height: 1em;
+    text-align: right;
+    margin: 0.5em;
+  }
+
+  .order {
+    @include rmDefault;
+    padding: 0.5em;
+    background-color: aliceblue;
+    margin: 1em 0.5em 1em 1em;
+    float: right;
+    font-size: 1.3em;
+    cursor: pointer;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  .total {
+    padding: 1.5em;
+    text-align: right;
+    font-size: 1.2rem;
+  }
+  .cart {
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+
+    border-radius: 10px;
+    margin: 0.5em 1em;
+    background-color: rgba(219, 219, 219, 0.432);
+    padding: 0.5em;
+
+    // .field {
+    //   //   &:not(:last-child) {
+    //   //     border-right: 2px solid black;
+    //   //   }
+    // }
+
+    img {
+      max-width: 200px;
+      border-radius: 10px;
+    }
+
+    .btns {
+      text-align: center;
+
+      .qtn {
+        padding: 0.5em 0;
+      }
+      .more,
+      .less {
+        cursor: pointer;
+        padding: 0.5em;
+        background-color: aliceblue;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: rgb(220, 239, 255);
+        }
+      }
+    }
+  }
+}

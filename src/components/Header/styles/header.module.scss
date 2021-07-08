@@ -1,0 +1,59 @@
+@import "../../styles/global";
+
+.header {
+  padding: 2em auto;
+  background-color: $pri-bg;
+}
+.header-con {
+  @include applyCon;
+  display: grid;
+
+  grid-template-columns: 100px 1.5fr 0.5fr 70px;
+  grid-template-rows: 100px;
+  grid-gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1em;
+
+  .logo {
+    font-size: 3rem;
+    margin: 0 0.5em;
+    text-align: center;
+
+    grid-column: 1 / 2;
+  }
+
+  .cart {
+    @include basicStyle;
+    grid-column: 3 / 4;
+    margin: 0 auto;
+
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.7em 0.5em;
+    background-color: $cart-bg;
+    width: 50%;
+
+    span {
+      background-color: aliceblue;
+      padding: 0 0.3em;
+      border-radius: 50%;
+    }
+  }
+  .acc {
+    @include iconStyle;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: 60px;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    @import "./acc-icon";
+  }
+
+  @import "./loc-search";
+}
+
+@import "./media-query";

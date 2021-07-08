@@ -1,0 +1,22 @@
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffcdb2e8;
+  margin: 2em auto;
+  padding: 0.1em 0;
+  width: 95%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(119, 119, 119, 0.384);
+  box-shadow: 0 0 10px rgba(119, 119, 119, 0.384);
+  position: relative;
+}
+
+.section h2 {
+  margin: 1em;
+  /* font-family: "Nanum Gothic", sans-serif; */
+  /* font-family: "Mate SC", serif; */
+
+  /* font-family: "Roboto Condensed", sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 3px;
+}

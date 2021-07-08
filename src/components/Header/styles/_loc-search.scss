@@ -1,0 +1,92 @@
+a {
+  @include rmDefault;
+  color: rgba(32, 32, 32, 0.87);
+}
+
+.loc-search {
+  @include flex(row);
+  position: relative;
+  grid-column: 2 / 3;
+  font-size: 1.4rem;
+
+  button {
+    @include rmDefault;
+  }
+
+  @import "./search-icon";
+  img {
+    @include iconStyle;
+    width: 30px;
+  }
+
+  .loc {
+    @include basicStyle;
+
+    width: 75%;
+    padding: 0.6em 1em 0.5em 0.6em;
+    background-color: $loc-bg;
+  }
+
+  .search-con {
+    @include basicStyle;
+    // @include rmDefault;
+    background-color: $pri-text-box;
+
+    position: absolute;
+
+    display: none;
+    top: 2.5em;
+    width: 95%;
+    border: 1px solid;
+    z-index: 10;
+    &:focus-within {
+      display: block;
+    }
+    &:hover {
+      display: block;
+    }
+
+    .search-box {
+      @include rmDefault;
+      background-color: $pri-text-box;
+      width: 95%;
+      font-size: 1.3rem;
+      padding: 0.5em;
+    }
+
+    .results {
+      .result {
+        display: flex;
+        // justify-content: space-around;
+        cursor: pointer;
+        img {
+          width: 100px;
+          padding: 0;
+          margin: 0.5em;
+        }
+        p {
+          margin: 1em;
+        }
+
+        &:not(:last-child) {
+          border-bottom: 1px solid black;
+        }
+        .res-loc {
+          font-size: 1rem;
+          color: rgb(100, 100, 100);
+        }
+        &:hover {
+          background-color: rgba(155, 155, 155, 0.363);
+        }
+      }
+    }
+  }
+  button {
+    &:hover + .search-con {
+      display: block;
+    }
+    &:focus-within + .search-con {
+      display: block;
+    }
+  }
+}
