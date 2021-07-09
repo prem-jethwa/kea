@@ -16,7 +16,7 @@ const Header = () => {
     <header className={classes.header}>
       <div className={classes["header-con"]}>
         <Link to="/" className={classes.logo}>
-          PJ
+          Kea
         </Link>
 
         <div className={classes["loc-search"]}>

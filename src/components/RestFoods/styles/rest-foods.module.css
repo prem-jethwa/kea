@@ -53,6 +53,9 @@
         grid-template-rows: -webkit-min-content;
         grid-template-rows: min-content;
   }
+  .rest h2 {
+    font-size: 1.2rem;
+  }
   .rest img {
     max-width: 180px;
     width: 90%;
