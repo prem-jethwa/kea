@@ -21,7 +21,7 @@ const CartItem = ({ cart }) => {
 
   return (
     <div className={classes.cart}>
-      <img src={cart.foodImg} />
+      <img src={cart.foodImg} alt={cart.title} />
       <p className={classes.field}>{cart.title}</p>
 
       <div className={`${classes.btns} ${classes.field}`}>
@@ -34,9 +34,9 @@ const CartItem = ({ cart }) => {
         </div>
       </div>
 
-      <div className={classes.field}>Rs.{cart.price}</div>
+      <div className={`${""} ${classes.price}`}>Rs.{cart.price}</div>
 
-      <div className={`${classes["item-total"]} ${classes.field}`}>
+      <div className={`${classes["item-total"]} ${""}`}>
         Total : {cart.price * cart.qtn}
       </div>
     </div>

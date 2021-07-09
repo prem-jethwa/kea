@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
 import classes from "./styles/header.module.css";
 
@@ -21,7 +21,7 @@ const SearchResults = ({ result, clearSearch }) => {
     <>
       {isSearched && <Redirect to={`/rest/${id}`} />}
       <div className={classes.result} onClick={onClickHandler}>
-        <img src={result.restImg} />
+        <img src={result.restImg} alt={_} />
         <div>
           <p>{result.name}</p>
           <p className={classes["res-loc"]}>{result.location}</p>

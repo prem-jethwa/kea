@@ -18,6 +18,11 @@
 @media (max-width: 700px) {
   .rest-container {
     grid-template-columns: repeat(2, 1fr);
+
+    .rest {
+      max-width: 150px;
+      height: 150px;
+    }
   }
 }
 @media (max-width: 400px) {

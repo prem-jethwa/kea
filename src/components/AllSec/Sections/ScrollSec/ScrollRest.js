@@ -11,7 +11,7 @@ const ScrollRest = ({ rest }) => {
         <h3>{rest.name}</h3>
         <img src={rest.restImg} alt="Restaurant Img" />
         <p>
-          <Stars val={rest.stars} />
+          <Stars key={`scroll-${rest.id}`} val={rest.stars} />
         </p>
       </Link>
     </Card>

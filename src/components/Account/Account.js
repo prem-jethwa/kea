@@ -1,7 +1,7 @@
 import classes from "./acc.module.css";
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import EditUser from "../UI/EditUser";
+// import EditUser from "../UI/EditUser";
 import { Redirect } from "react-router";
 
 // const user = {

@@ -9,13 +9,19 @@ const calcStars = (stars) => {
 
   for (let i = 0; i < splited[0]; i++) {
     starsArr.push(
-      <div className={`${classes["clip-star"]} ${classes["filled"]}`}></div>
+      <div
+        key={`${i}-filled`}
+        className={`${classes["clip-star"]} ${classes["filled"]}`}
+      ></div>
     );
   }
 
   if (splited[1])
     starsArr.push(
-      <div className={`${classes["clip-star"]} ${classes["half"]}`}></div>
+      <div
+        key={`half`}
+        className={`${classes["clip-star"]} ${classes["half"]}`}
+      ></div>
     );
 
   const starsArrLength = starsArr.length;
@@ -23,7 +29,9 @@ const calcStars = (stars) => {
 
   const remainingStars = 5 - starsArrLength;
   for (let i = 0; i < remainingStars; i++) {
-    starsArr.push(<div className={`${classes["clip-star"]}`}></div>);
+    starsArr.push(
+      <div key={`${i}-star`} className={`${classes["clip-star"]}`}></div>
+    );
   }
   return starsArr;
 };

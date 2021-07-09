@@ -196,7 +196,6 @@
   -webkit-box-shadow: 0 0 10px rgba(119, 119, 119, 0.308);
           box-shadow: 0 0 10px rgba(119, 119, 119, 0.308);
   width: 75%;
-  padding: 0.6em 1em 0.5em 0.6em;
   background-color: #b0feff69;
 }
 
@@ -338,7 +337,9 @@
     width: 25px;
   }
   .header-con .loc-search .loc {
-    padding: 0.5em;
+    font-size: 1.1rem;
+    padding: 0.4em 0.5em;
+    margin: auto 0;
   }
 }
 /*# sourceMappingURL=header.module.css.map */

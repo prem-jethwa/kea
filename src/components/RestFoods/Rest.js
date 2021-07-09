@@ -5,7 +5,7 @@ import Stars from "../UI/Stars";
 const Rest = ({ rest }) => {
   return (
     <div className={classes.rest}>
-      <img src={rest.restImg} />
+      <img src={rest.restImg} alt={rest.name} />
       <div className={classes["name-loc"]}>
         <h2>{rest.name}</h2>
         <p className={classes.loc}>{rest.location}</p>

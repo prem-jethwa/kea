@@ -23,9 +23,10 @@ const Food = ({ food }) => {
           <Notify msg="😋Food Added To Cart" />,
           document.getElementById("notify")
         )}
+      {/* {notity && <Notify msg="😋Food Added To Cart" />} */}
       <Card>
         <div className={classes.food}>
-          <img src={food.foodImg} />
+          <img src={food.foodImg} alt={classes.title} />
           <p className={classes.title}>{formatSentence(food.title)}</p>
           <div className={classes["price-add"]}>
             <p className={classes.price}>Rs.{food.price}</p>

@@ -4,16 +4,16 @@ import { useSelector } from "react-redux";
 import classes from "./styles/notify.module.css";
 
 const Notify = ({ msg }) => {
-  const [isRenderMsg, setIsRenderMsg] = useState(true);
+  // const [isRenderMsg, setIsRenderMsg] = useState(true);
   const isSignup = useSelector((state) => state.isSignup);
 
-  setTimeout(() => {
-    setIsRenderMsg(false);
-  }, 3000);
+  // setTimeout(() => {
+  //   setIsRenderMsg(false);
+  // }, 3000);
 
   return (
     <>
-      {!isSignup && isRenderMsg && (
+      {!isSignup && (
         <div className={classes.notify}>
           <p>
             {" "}
@@ -22,7 +22,7 @@ const Notify = ({ msg }) => {
         </div>
       )}
 
-      {isSignup && isRenderMsg && (
+      {isSignup && (
         <div className={classes.notify}>
           <p>
             {" "}

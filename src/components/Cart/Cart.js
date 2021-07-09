@@ -1,5 +1,5 @@
 import React from "react";
-import { cartData } from "../dummyData";
+// import { cartData } from "../dummyData";
 import classes from "./styles/cart.module.css";
 import CartItem from "./CartItem";
 import { useDispatch, useSelector } from "react-redux";

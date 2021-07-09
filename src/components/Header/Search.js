@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import searchIcon from "../Assets/img/search.png";
+import React, { useRef, useState } from "react";
+// import searchIcon from "../Assets/img/search.png";
 import classes from "./styles/header.module.css";
 import { dummyData } from "../dummyData";
 import SearchResults from "./SearchResults";

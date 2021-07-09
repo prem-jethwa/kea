@@ -1,5 +1,5 @@
 import React from "react";
-import accIcon from "../Assets/img/account.png";
+// import accIcon from "../Assets/img/account.png";
 import classes from "./styles/header.module.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";

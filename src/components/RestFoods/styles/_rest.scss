@@ -27,10 +27,12 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .rest {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     img {
+      max-width: 180px;
       width: 90%;
     }
   }
