@@ -49,12 +49,14 @@
   .rest {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    -ms-grid-rows: min-content;
+        grid-template-rows: -webkit-min-content;
+        grid-template-rows: min-content;
   }
   .rest img {
     max-width: 180px;
     width: 90%;
+    margin: auto;
   }
 }
 
@@ -65,7 +67,7 @@
   display: grid;
   -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  margin: 1em;
+  margin: 1em auto;
 }
 
 .foods-con .food {
@@ -73,7 +75,6 @@
 }
 
 .foods-con .food img {
-  max-width: 150;
   width: 100%;
   margin: 0 auto;
   max-width: 300px;
