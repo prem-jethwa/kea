@@ -1,5 +1,6 @@
 import { memo } from "react";
 import classes from "./footer.module.css";
+import logoSvg from "../Assets/svg/yellow-logo.svg";
 
 const Footer = () => {
   return (
@@ -12,6 +13,7 @@ const Footer = () => {
             Design & Developed by <span> PREM JETHWA </span>
           </p>
         </div>
+        <img src={logoSvg} alt="brand logo" className={classes["logo-svg"]} />
         <p>copyright © 2021 all rights reserved</p>
         <p>
           <div className={classes.license}>
