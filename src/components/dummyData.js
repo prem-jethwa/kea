@@ -1,8 +1,8 @@
 export const dummyData = [
   {
     id: 1,
-    name: "Prem rest",
-    location: "Address of Restaurant",
+    name: "INDIAN Accent",
+    location: "New Delhi",
     type: "veg",
     stars: 4.5,
     restImg:
@@ -76,8 +76,8 @@ export const dummyData = [
   },
   {
     id: 2,
-    name: "Hardik rest",
-    location: "Address of Restaurant",
+    name: "Mosque",
+    location: "Mumbai",
     type: "veg",
     stars: 3.5,
     restImg:
@@ -119,8 +119,8 @@ export const dummyData = [
   },
   {
     id: 3,
-    name: "Bhavik rest",
-    location: "Address of Restaurant",
+    name: "Trishna",
+    location: "Mumbai",
     type: "veg",
     stars: 3.7,
     restImg:
@@ -162,8 +162,8 @@ export const dummyData = [
   },
   {
     id: 4,
-    name: "Chirag rest",
-    location: "Address of Restaurant",
+    name: "Wasabi by Morimoto",
+    location: "Delhi",
     type: "veg",
     stars: 3,
     restImg:
@@ -205,8 +205,8 @@ export const dummyData = [
   },
   {
     id: 5,
-    name: "Vansika rest",
-    location: "Address of Restaurant",
+    name: "Slink & Bardot",
+    location: "Mumbai",
     type: "veg",
     stars: 4,
     restImg:
@@ -248,8 +248,8 @@ export const dummyData = [
   },
   {
     id: 6,
-    name: "Some One's rest",
-    location: "Address of Restaurant",
+    name: "O Pedro",
+    location: "Mumbai",
     type: "veg",
     stars: 2.5,
     restImg:

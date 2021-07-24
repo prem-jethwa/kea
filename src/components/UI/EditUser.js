@@ -16,7 +16,6 @@ const EditUser = () => {
   const dispatch = useDispatch();
   const { name, email, address } = useSelector((state) => state.user);
 
-  console.log(name, email, address);
   const onSubmitHandler = () => {
     if (!formRef) return;
 

@@ -9,10 +9,6 @@ const PopUp = ({ msg, show }) => {
     setIsRenderMsg(false);
   };
 
-  // setTimeout(() => {
-  //   setIsRenderMsg(false);
-  // }, 5000);
-
   useEffect(() => {
     if (show) setIsRenderMsg(true);
   }, [show]);
@@ -33,5 +29,4 @@ const PopUp = ({ msg, show }) => {
   );
 };
 
-ReactDOM.createPortal(<PopUp />, document.getElementById("popup"));
 export default PopUp;

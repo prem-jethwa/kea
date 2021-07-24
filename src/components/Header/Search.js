@@ -51,7 +51,11 @@ const Search = () => {
           placeholder="Search For Restaurants.."
           className={classes["search-box"]}
         />
-        <div className={classes.results}>{renderSerRes}</div>
+        <div className={classes.results}>
+          {!results.length && searchInputRef?.current?.value
+            ? "No resturant found!"
+            : renderSerRes}
+        </div>
       </div>
     </>
   );
