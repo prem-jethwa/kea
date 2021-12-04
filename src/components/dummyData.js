@@ -253,7 +253,7 @@ export const dummyData = [
     type: "veg",
     stars: 2.5,
     restImg:
-      "https://cdn.pixabay.com/photo/2018/08/10/21/52/restaurant-3597677__340.jpg",
+      "https://cdn.pixabay.com/photo/2019/09/12/15/21/resort-4471852_960_720.jpg",
     foods: [
       {
         id: 25,
